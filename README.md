@@ -5,7 +5,7 @@ Agosto 2019.
 
 Los datos usados se pueden encontrar [aquí](https://drive.google.com/drive/folders/1YnLc_n87TREgyr8BeZ-vSwv8slX8hZpQ?usp=sharing).
 
-La presentación del TFM se puede ver en este [link](https://gustavovargas.github.io/presentacion_tfm/). Está hecho en reveal.js.
+La presentación del TFM se puede ver en este [link](https://gustavovargas.github.io/tfm_afi/). Está hecho en reveal.js.
 
 
 ## Abstract
