@@ -367,71 +367,193 @@
 							</tbody>
 						</table>
 					</section>
+
+					<section>
+						<ul>
+							<li>
+								Pasamos a ver, para una observación determinada del test, las variables más importantes según cada modelo
+							</li>
+							<li>
+								Hemos de recordar que son explicaciones locales, por lo que las variables importantes en otras observaciones pueden ser otras
+							</li>
+							<li>
+								Aún así, si todas las explicaciones convergen, podemos estar más seguro de estar interpretando bien la clasificación
+							</li>
+						</ul>
+					</section>
 					<section>
 						<h2>
-							Logística Eli5
+							Regresión Logística 
 						</h2>
+						<h4>
+							Variables más importantes
+						</h4>
 						<table>
 							<thead>
 								<tr>
-									<th>Item</th>
-									<th>Value</th>
-									<th>Quantity</th>
+									<th>Eli5</th>
+									<th>Lime</th>
 								</tr>
 							</thead>
 							<tbody>
 								<tr>
-									<td>Apples</td>
-									<td>$1</td>
-									<td>7</td>
+									<td>total_pymnt</td>
+									<td>total_pymnt</td>
 								</tr>
 								<tr>
-									<td>Lemonade</td>
-									<td>$2</td>
-									<td>18</td>
+									<td>total_rec_prncp</td>
+									<td>total_rec_prncp</td>
 								</tr>
 								<tr>
-									<td>Bread</td>
-									<td>$3</td>
-									<td>2</td>
+									<td>total_rec_int</td>
+									<td>recoveries</td>
+								</tr>
+								<tr>
+									<td>loan_amnt</td>
+									<td>total_rec_int</td>
+								</tr>
+								<tr>
+									<td>out_prncp</td>
+									<td>loan_amnt</td>
 								</tr>
 							</tbody>
 						</table>
 					</section>
-					<section>
+
+
+
+<section>
 						<h2>
-							Árboles de decisión con Eli5
+							Árboles de decisión
 						</h2>
+						<h4>
+							Variables más importantes
+						</h4>
+						<table>
+							<thead>
+								<tr>
+									<th>Eli5</th>
+									<th>Lime</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<td>last_pymnt_d</td>
+									<td>last_pymnt_d</td>
+								</tr>
+								<tr>
+									<td>last_pymnt_amnt</td>
+									<td>total_rec_late_fee</td>
+								</tr>
+								<tr>
+									<td>total_rec_prncp</td>
+									<td>last_pymnt_amnt</td>
+								</tr>
+								<tr>
+									<td></td>
+									<td>acc_now_delinq</td>
+								</tr>
+								<tr>
+									<td></td>
+									<td>total_rec_prncp</td>
+								</tr>
+							</tbody>
+						</table>
 					</section>
-					<section>
+
+
+<section>
 						<h2>
-							Árboles de decisión con Lime
+							Random Forest
 						</h2>
+						<h4>
+							Variables más importantes
+						</h4>
+						<table>
+							<thead>
+								<tr>
+									<th>Eli5</th>
+									<th>Lime</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<td>total_rec_prncp</td>
+									<td>last_pymnt_d</td>
+								</tr>
+								<tr>
+									<td>last_credit_pull_d</td>
+									<td>recoveries</td>
+								</tr>
+								<tr>
+									<td>recoveries</td>
+									<td>collection_recovery_fee</td>
+								</tr>
+								<tr>
+									<td>total_pymnt</td>
+									<td>last_pymnt_amnt</td>
+								</tr>
+								<tr>
+									<td>loan_amnt</td>
+									<td>total_rec_prncp</td>
+								</tr>
+							</tbody>
+						</table>
 					</section>
+
 					<section>
 						<h2>
-							Random Forest con Eli5
+							Extreme Gradient Boosting 
 						</h2>
+						<h4>
+							Variables más importantes
+						</h4>
+						<table>
+							<thead>
+								<tr>
+									<th>Eli5</th>
+									<th>Lime</th>
+									<th>Shap</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<td>last_credit_pull_d</td>
+									<td>recoveries</td>
+									<td>out_prncp</td>
+								</tr>
+								<tr>
+									<td>total_rec_prncp</td>
+									<td>last_pymnt_d</td>
+									<td>issue_d</td>
+								</tr>
+								<tr>
+									<td>out_prncp</td>
+									<td>out_prncp</td>
+									<td>last_pymnt_amnt</td>
+								</tr>
+								<tr>
+									<td>loan_amnt</td>
+									<td>total_rec_prncp</td>
+									<td>last_pymnt_d</td>
+								</tr>
+								<tr>
+									<td>inq_last_6mths</td>
+									<td>last_pymnt_amnt</td>
+									<td>total_rec_prncp</td>
+								</tr>
+							</tbody>
+						</table>
 					</section>
+
 					<section>
 						<h2>
-							Random Forest con Lime
+							Shap con XGBoost
 						</h2>
-					</section>
-					<section>
-						<h2>
-							XGBoost con Eli5
-						</h2>
-					</section>
-					<section>
-						<h2>
-							XGBoost con Lime
-						</h2>
-					</section>
-					<section>
-						<h2>
-							XGBoost con Shap
-						</h2>
+						<ul>
+							<img src="lib/shap_value.png" alt="Down arrow" style="background: none;margin:none;border:none;box-shadow:none">
+							
+						</ul>
 					</section>
 
 				</section>
