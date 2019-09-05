@@ -236,36 +236,100 @@
 							<p>Servicio de préstamos entre particulares. Préstamos entre 1.000 y 35.000 dólares, y tasas entre 6,03% al 24,89%.</p>
 						</div>
 					</section>
+
+
+					<section>
+						<h2>
+							Dataset
+						</h2>
+						<ul>
+							<li>
+								887.379 observaciones y 74 variables
+							</li>
+							<li>
+								Partición en train y test manteniendo las proporción de morosos en el target: 621.165 en train y 266.214 en test
+							</li>
+						</ul>
+					</section>
+
+					<section>
+						<h2>
+							Preprocesado
+						</h2>
+						<ul>
+							<li>
+								Eliminamos las variables con más de un 10% de NAs
+							</li>
+							<li>
+								Eliminamos las columnas con una correlación superior al 90%
+							</li>
+							<li>
+								Mantenemos las variables categóricas tal y cómo están. Al hacer los pipelines, usaremos un OneHotEncoder. Esto es así porque lo necesita Lime.
+							</li>
+						</ul>
+					</section>
+
+					<section>
+						<h2>
+							Preprocesado
+						</h2>
+						<ul>
+							<li>
+								Nos quedamos con 33 columnas y un train con 577.834 observaciones y un test con 247.647. Esto es porque hay muchas variables con muchas nulos.
+							</li>
+							<li>
+								Creamos una clase basada en el BaseEstimator de sklearn
+							</li>
+
+						</ul>
+					</section>
+
+
+					<section>
+						<h2>
+							Preprocesado
+						</h2>
+						<ul>
+
+							<li>
+								Además, es necesario crear un OrdinalEncoder en el fit, solo para crear luego un diccionario con la localización de cada variable y número de la categoría.
+							</li>
+							<li>
+								Nuestro target pasa a ser la variable 'loan_status', dejando solo dos categorías: 'default' si ha presentado algún problema de pago, y 'fully paid' en caso contrario
+							</li>
+						</ul>
+					</section>
+
 					<section>
 						<h2>
 							Logística Eli5
 						</h2>
 						<table>
-						<thead>
-							<tr>
-								<th>Item</th>
-								<th>Value</th>
-								<th>Quantity</th>
-							</tr>
-						</thead>
-						<tbody>
-							<tr>
-								<td>Apples</td>
-								<td>$1</td>
-								<td>7</td>
-							</tr>
-							<tr>
-								<td>Lemonade</td>
-								<td>$2</td>
-								<td>18</td>
-							</tr>
-							<tr>
-								<td>Bread</td>
-								<td>$3</td>
-								<td>2</td>
-							</tr>
-						</tbody>
-					</table>
+							<thead>
+								<tr>
+									<th>Item</th>
+									<th>Value</th>
+									<th>Quantity</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<td>Apples</td>
+									<td>$1</td>
+									<td>7</td>
+								</tr>
+								<tr>
+									<td>Lemonade</td>
+									<td>$2</td>
+									<td>18</td>
+								</tr>
+								<tr>
+									<td>Bread</td>
+									<td>$3</td>
+									<td>2</td>
+								</tr>
+							</tbody>
+						</table>
 					</section>
 					<section>
 						<h2>
