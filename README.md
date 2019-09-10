@@ -3,9 +3,11 @@
 Trabajo Fin de Máster del [*máster en Data Science y Big Data en Finanzas*](https://www.afiescueladefinanzas.es/master-big-data-finanzas) de AFI Escuela de Finanzas.
 Agosto 2019.
 
-[Google Drive](https://drive.google.com/open?id=1F8BcgD2goGgxj5KYPxBMmGbfkVIvTUIU).
-[pdf](https://github.com/gustavovargas/tfm_afi/blob/master/TFM_Interpretabilidad.pdf)
-[presentación](https://gustavovargas.github.io/tfm_afi/)
+[[Google Drive](https://drive.google.com/open?id=1F8BcgD2goGgxj5KYPxBMmGbfkVIvTUIU)]
+
+[[PDF](https://github.com/gustavovargas/tfm_afi/blob/master/TFM_Interpretabilidad.pdf)]
+
+[[Presentación](https://gustavovargas.github.io/tfm_afi/)]
 
 
 ## Abstract
