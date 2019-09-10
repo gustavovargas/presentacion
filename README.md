@@ -10,7 +10,7 @@ Agosto 2019.
 [[Presentación](https://gustavovargas.github.io/tfm_afi/)]
 
 
-## Abstract
+## Resumen
 
 En los últimos años, la llegada del Machine Learning ha afectado a la forma en que las entidades financieras hacen las admisiones de solicitudes de préstamo. El problema reside en que estos modelos se consideran modelos de caja negra, esto es, que no podemos saber los motivos de determinada clasficación. Para atajar este problema, en los últimos años se han estado desarrollando paquetes de interpretabilidad para modelos de Machine Learning, cuya finalidad es hacer interpretables esas cajas negas.
 
